@@ -19,11 +19,14 @@ function startUpdate(e) {
 
  function updateTextArea() {
 
-  let url = "https://hf.space/embed/Amrrs/gradio-sentiment-analyzer/+/api/predict/"; // url
-
+  let url = "https://ahsankh-gpt2.hf.space/"; // url
+  //client = Client("https://ahsankh-gpt2.hf.space/")
   
   var text = document.getElementById("input_text").value;
-
+  //result = client.predict(
+  //			text,	# str in 'Input Text' Textbox component
+  //				api_name="/predict"
+  //              )
   //console.log(text);
   
   fetch(url,  { method: "POST", body: JSON.stringify({"data": [text]
